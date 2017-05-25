@@ -1,0 +1,6 @@
+#xzw_starSys *{margin:0; padding:0}
+#xzw_starSys{position:relative; margin: 10px auto; font-size: 12px; line-height: 22px; overflow: hidden; display: inline-block; position: relative; vertical-align: middle; margin: 0 0 5px 5px;}
+#xzw_starBox{position:relative;  float:left; }
+#xzw_starSys .star { height:20px; width:130px; position:relative; background:url(../img/star.gif) left -40px repeat-x; cursor:pointer}
+#xzw_starSys .current-rating{ background: url(../img/star.gif) left center; position: absolute; height: 20px; z-index: 1; top:0; left:0 }
+

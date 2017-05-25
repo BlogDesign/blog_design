@@ -1,0 +1,92 @@
+.p-timeSelect {
+  border: 1px solid #dddddd;
+}
+.p-timeSelect_header {
+  width: 52px;
+  float: left;
+  padding-top: 33px;
+}
+.p-timeSelect_header thead {
+  border-top: 2px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.p-timeSelect_header thead > tr > th {
+  border-bottom: 1px solid #dddddd;
+}
+.p-timeSelect_content {
+  margin-left: 52px;
+}
+.p-timeSelect_content .c-table-responsive {
+  margin: 0;
+}
+.p-timeSelect_content .table {
+  display: inline-block;
+  width: auto;
+}
+.p-timeSelect_content tbody td {
+  padding: 0 !important;
+  height: 34px;
+}
+.p-timeSelect_content td.c-success a {
+  color: #95AF89;
+}
+.p-td_wrap {
+  width: 320px;
+  height: 33px;
+}
+.p-timeSelect_content .p-timeSelect_checked {
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  line-height: 33px;
+  text-align: center;
+  height: 33px;
+  width: 20px;
+  border-left: 1px solid #dddddd;
+  text-decoration: none;
+  color: #729962;
+  text-indent: -9999px;
+}
+.p-timeSelect_content .p-timeSelect_checked.active {
+  background-color: #dff0d8 !important;
+}
+.p-timeSelect_content .p-timeSelect_checked:hover {
+  background-color: #dddddd;
+}
+.p-timeSelect_content .p-timeSelect_checked:first-child {
+  border: none;
+}
+.p-text-physique {
+  font-size: 14px;
+}
+.p-text-physique strong {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #F98E33;
+}
+.p-text-physique small {
+  color: #CCCCCC;
+}
+.p-question {
+  font-size: 14px;
+}
+.p-question b {
+  font-size: 16px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.p-radio-group {
+  padding-left: 1.8em;
+}
+.p-list-group-index > .list-group-item {
+  padding-left: 30px;
+  position: relative;
+}
+.p-list-group-index > .list-group-item .p-i-people {
+  display: block;
+  position: absolute;
+  left: 7px;
+  width: 18px;
+  height: 18px;
+}

@@ -1,0 +1,73 @@
+﻿
+label{font-size:12px;
+      }
+      .input-append .add-on, .input-prepend .add-on {
+font-size: 12px;
+}
+.input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input, .input-append .dropdown-menu, .input-prepend .dropdown-menu {
+font-size: 12px;
+}
+.family-history .checkbox{float:left;width:100px;padding-top:5px;}
+.questions-header{margin:0 0 0 45px;padding : 15px 0;}
+.questions-header{color:#666666;}
+.question-title{margin:0;margin-left:45px;padding-top:15px;}
+.btn-actions{padding:20px;text-align:center;}
+.radio-inline .controls{margin-left:45px;padding-top:10px;padding-bottom:10px;}
+.radio-inline .controls .radio{float:left;width:200px;padding-top:0px;}
+.dark .widget-title {
+color: white;
+background: #7D8896;
+background: -webkit-linear-gradient(top, rgb(125, 136, 150) 0%,rgb(109, 115, 131) 100%);
+background: -moz-linear-gradient(top, rgb(125, 136, 150) 0%,rgb(109, 115, 131) 100%);
+background: -o-linear-gradient(top, rgb(125, 136, 150) 0%,rgb(109, 115, 131) 100%);
+background: -ms-linear-gradient(top, rgb(125, 136, 150) 0%,rgb(109, 115, 131) 100%);
+background: linear-gradient(top, rgb(125, 136, 150) 0%,rgb(109, 115, 131) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7D8896', endColorstr='#6D7383');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#7D8896', endColorstr='#6D7383')";
+text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+.dark{border-radius:6px 6px 0 0;}
+.dark .widget-title{border-radius:5px 5px 0 0;}
+.dark .widget-title h5{color:#fff;text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);}
+.dark .widget-title .icon{opacity: .9;border-right-color:#909BA9;}
+/*网页顶部*/
+#header .navbar-inner .container-fluid{text-align:center;}
+.navbar-style .navbar-inner {
+padding-bottom:5px;
+background-color: #444853;
+border-bottom: 3px solid #88C433;
+background-image: none;
+filter: none;
+}
+.brand h1 {
+background: url(../images/logo-quke.jpg) no-repeat left top;
+text-indent: -9999px;
+width: 294px;
+height: 41px;
+}
+.papers-name
+{margin: 15px 0;
+ color:#FEFFFF;
+ text-shadow:1px 1px 3px rgba(0,0,0,.5);
+ font-family: "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
+_font-family: Tahoma, Arial, Helvetica, STHeiti, sans-serif;
+letter-spacing:3px;
+position:relative;
+    }
+.papers-name span {
+  background: url(../images/gradient.png) repeat-x;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 31px;
+  bottom:-5px;
+}
+/*性别选择*/
+.controls-inline label{width:50px;padding-top:5px;margin-right:10px;float:left;}
+/*footer*/
+.footer{background-color: #E5E5E5;border-top:1px solid #F9F9F9;outline:1px solid #E1E1E1;padding:10px 0; }
+.footer .container {position: relative;}
+.foot-nav{line-height: 30px;width:530px;margin-bottom:0;position: relative;left: 50%;margin-left: -260px !important;}
+.footer p{position: relative;width: 550px;left: 50%;margin-left: -260px;}
+.footer-logo{position: absolute;display: block;background: url(../images/footer-logo.png) no-repeat center center;text-indent: -9999px;width: 50px;height: 38px;left:50%;margin-left: -400px;top:50%;margin-top: -19px;}

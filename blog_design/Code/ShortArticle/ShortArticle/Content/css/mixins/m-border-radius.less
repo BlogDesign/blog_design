@@ -1,0 +1,41 @@
+//  Single side border-radius
+
+.u-b-rad (@radius: 5px) {
+    border-radius: @radius;
+}
+
+.u-b-t-l-rad(@radius:5px){
+	border-top-left-radius: @radius;
+}
+.u-b-t-r-rad(@radius:5px){
+	border-top-right-radius: @radius;
+}
+.u-b-b-l-rad(@radius:5px){
+	border-bottom-left-radius: @radius;
+}
+.u-b-b-r-rad(@radius:5px){
+	border-bottom-right-radius: @radius;
+}
+
+.u-b-t-rad(@radius:5px){
+	border-top-right-radius: @radius;
+	border-top-left-radius: @radius;
+}
+.u-b-r-rad(@radius:5px){
+	border-bottom-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+.u-b-b-rad(@radius:5px){
+	border-bottom-right-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+.u-b-l-rad(@radius:5px){
+	border-bottom-left-radius: @radius;
+	border-top-left-radius: @radius;
+}
+.u-b-trbl-rad (@radius-top:5px;@radius-right:5px;@radius-bottom:5px;@radius-left:5px) {
+    border-top-radius: @radius-top;
+    border-right-radius: @radius-right;
+    border-bottom-radius: @radius-bottom;
+    border-left-radius: @radius-left;
+}

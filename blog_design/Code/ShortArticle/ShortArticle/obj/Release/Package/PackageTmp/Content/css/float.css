@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------012-index-float-----------------------------------*/
+.index-float{ float:left; width:113px; height:122px; border:1px solid #d9d9d9;}
+
+.index-float-home{ float:left; width:113px; height:40px;}
+.float-home-icon{ float:left; background:url(/images/index-float-home.png) no-repeat; width:17px; height:15px; margin:12px 0 0 25px;}
+.float-home-txt{ float:left; font:12px arial,"宋体"; margin:12px 0 0 10px;}
+.float-home-txt a{ float:left; font:12px arial,"宋体"; color:#666666; text-decoration:none;}
+.float-line{ float:left; background:url(/images/float-line.png) no-repeat; width:114px; height:1px; margin:0;}
+
+.index-float-set{ float:left; width:113px; height:40px; background-color:#f2f2f2;}
+.float-set-icon{ float:left; background:url(/images/index-float-set.png) no-repeat; width:16px; height:16px; margin:12px 0 0 25px;}
+
+.float-exit-icon{ float:left; background:url(/images/index-float-exit.png) no-repeat; width:16px; height:16px; margin:12px 0 0 25px;}
+
+/*--------------------012-float-add-----------------------------------*/
+.float-add{ float:left; width:508px; height:336px;}
+.float-add-top{ float:left; background:url(/images/float-add-top.png) no-repeat; width:508px; height:31px;}
+.float-add-title{ float:left; font:14px arial,"宋体"; font-weight:bold; color:#444444; margin:8px 0 0 10px;}
+.float-add-exit{ float:right; background:url(/images/float-add-exit.png) no-repeat; width:11px; height:11px; margin:10px 15px 0 0;}
+.float-add-exit a{ float:right; background:url(/images/float-add-exit.png) no-repeat; width:11px; height:11px;}
+.float-add-exit a:hover{ float:right; background:url(/images/float-add-exit-hover.png) no-repeat; width:11px; height:11px;}
+.float-add-mid{ float:left; background:url(/images/float-add-mid.png) repeat-y; width:508px; height:300px;}
+.float-add-bottom{ float:left; background:url(/images/float-add-bottom.png) no-repeat; width:508px; height:10px;}
+
+.float-stock{ float:left; width:500px; height:15px; margin:20px 0 0 5px;}
+.float-stock-name{ float:left; width:120px; text-align:right; font:14px arial,"宋体"; color:#666666;}
+.float-stock-txt{ float:left; width:360px; margin:0 0 0 5px; font:14px arial,"宋体"; color:#666666; font-weight:bold;}
+.float-price{ float:left; width:500px; height:15px; margin:15px 0 0 5px;}
+.float-price-name{ float:left; width:120px; text-align:right; font:14px arial,"宋体"; color:#666666;}
+.float-price-txt{ float:left; width:360px; margin:0 0 0 5px; font:14px arial,"宋体"; color:#c83333; font-weight:bold;}
+
+.float-price-write{ float:left; width:500px; height:28px; margin:15px 0 0 5px;}
+.float-price-write-name{ float:left; width:120px; text-align:right; font:14px arial,"宋体"; color:#666666; margin:5px 0 0 0;}
+.float-price-input{ float:left; background:url(/images/float-add-input1.png) no-repeat; width:135px; height:26px; margin:0 0 0 5px;}
+.float-price-input input{ float:left; border:0px; width:130px; height:20px; margin:2px;}
+
+.float-remark{ float:left; width:500px; height:120px; margin:15px 0 0 5px;}
+.float-remark-name{ float:left; width:120px; text-align:right; font:14px arial,"宋体"; color:#666666; margin:5px 0 0 0;}
+.float-remark-input{ float:left; background:url(/images/float-add-input2.png) no-repeat; width:353px; height:106px; margin:0 0 0 5px;}
+.float-remark-input input{ float:left; border:0px; width:349px; height:100px; margin:2px; text-align:left;}
+
+.float-done{ float:left; margin:10px 0 0 340px; background:url(/images/float-add-done.png) no-repeat; width:65px; height:25px;}
+.float-done a{ float:left; background:url(/images/float-add-done.png) no-repeat; width:65px; height:25px;}
+.float-done a:hover{ float:left; background:url(/images/float-add-done-hover.png) no-repeat; width:65px; height:25px;}
+
+.float-cancel{ float:left; margin:10px 0 0 10px; background:url(/images/float-add-cancel.png) no-repeat; width:65px; height:25px;}
+.float-cancel a{ float:left;background:url(/images/float-add-cancel.png) no-repeat; width:65px; height:25px;}
+.float-cancel a:hover{ float:left;background:url(/images/float-add-cancel-hover.png) no-repeat; width:65px; height:25px;}
+
+/*--------------------012-float-cancel-----------------------------------*/
+
+.float-cancel-stock{ float:left; width:418px; height:201px;}
+
+.float-cancel-top{ float:left; background:url(/images/float-cancel-top.png) no-repeat; width:418px; height:31px;}
+.float-cancel-mid{ float:left; background:url(/images/float-cancel-mid.png) repeat-y; width:418px; height:160px;}
+.float-cancel-bottom{ float:left; background:url(/images/float-cancel-bottom.png) repeat-y; width:418px; height:10px;}
+
+.float-cancel-icon{ float:left; background:url(/images/float-attention.png) no-repeat; width:30px; height:30px; margin:40px 0 0 50px;}
+.float-cancel-txt{ float:left; font:14px arial,"宋体"; color:#666666; margin:48px 0 0 10px;}
+
+.float-done1{ float:left; margin:50px 0 0 170px; background:url(/images/float-add-done.png) no-repeat; width:65px; height:25px;}
+.float-done1 a{ float:left; background:url(/images/float-add-done.png) no-repeat; width:65px; height:25px;}
+.float-done1 a:hover{ float:left; background:url(/images/float-add-done-hover.png) no-repeat; width:65px; height:25px;}
+
+.float-cancel1{ float:left; margin:50px 0 0 10px; background:url(/images/float-add-cancel.png) no-repeat; width:65px; height:25px;}
+.float-cancel1 a{ float:left;background:url(/images/float-add-cancel.png) no-repeat; width:65px; height:25px;}
+.float-cancel1 a:hover{ float:left;background:url(/images/float-add-cancel-hover.png) no-repeat; width:65px; height:25px;}
+
+
+
+
+

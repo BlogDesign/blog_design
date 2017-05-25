@@ -1,0 +1,82 @@
+/*reset重置*/
+form {
+margin-bottom: 0;
+}
+.nopadding {
+padding: 0 !important;
+}
+.form-horizontal .control-group {
+border-top: 1px solid #ffffff;
+border-bottom: 1px solid #eeeeee;
+margin-bottom: 0;
+}
+.form-horizontal .control-label {
+padding-top: 15px;
+width: 180px;
+}
+.form-horizontal .controls {
+margin-left: 200px;
+padding: 10px 0;
+}
+.btn-actions {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+
+
+.widget-box {
+background: none repeat scroll 0 0 #F9F9F9;
+border-top: 1px solid #CDCDCD;
+border-left: 1px solid #CDCDCD;
+border-right: 1px solid #CDCDCD;
+clear: both;
+margin-top: 16px;
+margin-bottom: 16px;
+position: relative;
+}
+.widget-title, .modal-header, .table th, div.dataTables_wrapper .ui-widget-header {
+background-color: #efefef;
+    border-bottom: 1px solid #CDCDCD;
+    height: 36px;
+    background-image: -linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+}
+.widget-title span.icon 
+{
+    line-height:20px;
+border-right: 1px solid #cdcdcd;
+padding: 9px 10px 7px 11px;
+float: left;
+opacity: .7;
+}
+.widget-title h5 {
+color: #666666;
+text-shadow: 0 1px 0 #ffffff;
+float: left;
+font-size: 12px;
+font-weight: bold;
+padding: 12px;
+line-height: 12px;
+margin: 0;
+}
+.widget-title .label {
+padding: 3px 5px 2px;
+float: right;
+margin: 9px 15px 0 0;
+box-shadow: 0 1px 2px rgba(0,0,0,0.3) inset, 0 1px 0 #ffffff;
+}
+.widget-content {
+padding: 12px 15px;
+border-bottom: 1px solid #cdcdcd;
+}
+@media (max-width: 480px)
+{
+    .form-horizontal .control-group .control-label
+    {margin-left:45px;
+        }
+.form-horizontal .control-group .controls {
+margin-left: 45px;
+padding-top:0;
+}
+.question-title{margin-left:45px;margin-bottom:5px;padding-right:45px;}
+}

@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32C544B0-1EE2-47F7-A11E-99EDC51B316B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShortArticle</RootNamespace>
+    <AssemblyName>ShortArticle</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Content\css\c - 副本.css" />
+    <Content Include="Content\css\c.css" />
+    <Content Include="Content\css\Delivery.css" />
+    <Content Include="Content\css\float.css" />
+    <Content Include="Content\css\i-ColorWidth.css" />
+    <Content Include="Content\css\ie.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\l - 副本.css" />
+    <Content Include="Content\css\l-flat.css" />
+    <Content Include="Content\css\l.css" />
+    <Content Include="Content\css\layout-windowouter.css" />
+    <Content Include="Content\css\login-GreenTown01 - 副本.css" />
+    <Content Include="Content\css\login-GreenTown01.css" />
+    <Content Include="Content\css\login.css" />
+    <Content Include="Content\css\master.css" />
+    <Content Include="Content\css\mixins\l-color.css" />
+    <Content Include="Content\css\mixins\m-background-variant.css" />
+    <Content Include="Content\css\mixins\m-border-radius.css" />
+    <Content Include="Content\css\mixins\m-center-block.css" />
+    <Content Include="Content\css\mixins\m-clearfix.css" />
+    <Content Include="Content\css\mixins\m-css3.css" />
+    <Content Include="Content\css\mixins\m-gradients.css" />
+    <Content Include="Content\css\mixins\m-grid.css" />
+    <Content Include="Content\css\mixins\m-hide-text.css" />
+    <Content Include="Content\css\mixins\m-image.css" />
+    <Content Include="Content\css\mixins\m-labels.css" />
+    <Content Include="Content\css\mixins\m-reset.css" />
+    <Content Include="Content\css\mixins\m-shadow.css" />
+    <Content Include="Content\css\mixins\m-u.css" />
+    <Content Include="Content\css\mixins\u-padding.css" />
+    <Content Include="Content\css\mixins\veryless-plugin.css" />
+    <Content Include="Content\css\mixins\veryless.css" />
+    <Content Include="Content\css\p-doctor-group.css" />
+    <Content Include="Content\css\p-index.css" />
+    <Content Include="Content\css\p.css" />
+    <Content Include="Content\css\print.css" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\screen-user.css" />
+    <Content Include="Content\css\star.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\u.css" />
+    <Content Include="Content\css\unicorn.main.css" />
+    <Content Include="Content\css\unicorn.style.css" />
+    <Content Include="Content\developer\bootstrap-switch-master\dist\css\bootstrap2\bootstrap-switch.css" />
+    <Content Include="Content\developer\bootstrap-switch-master\dist\css\bootstrap2\bootstrap-switch.min.css" />
+    <Content Include="Content\developer\bootstrap-switch-master\dist\css\bootstrap3\bootstrap-switch.css" />
+    <Content Include="Content\developer\bootstrap-switch-master\dist\css\bootstrap3\bootstrap-switch.min.css" />
+    <Content Include="Content\developer\bootstrap-switch-master\dist\js\bootstrap-switch.js" />
+    <Content Include="Content\developer\bootstrap-switch-master\dist\js\bootstrap-switch.min.js" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap.min-3.35.css" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\developer\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\developer\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\developer\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\developer\flatUi\css\dh.css" />
+    <Content Include="Content\developer\flatUi\css\flat-ui.css" />
+    <Content Include="Content\developer\flatUi\fonts\flat-ui-icons-regular.svg" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-black.svg" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bold.svg" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bolditalic.svg" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-italic.svg" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-light.svg" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-regular.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Book.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Calendar.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Chat.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Clipboard.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Compas.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Gift-Box.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Infinity-Loop.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Mail.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Map.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Pensils.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Pocket.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Retina-Ready.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Toilet-Paper.png" />
+    <Content Include="Content\developer\flatUi\images\icons\png\Watches.png" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\book.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\calendar.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\chat.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\clipboard.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\clocks.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\compas.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\gift-box.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\loop.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\mail.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\map.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\paper-bag.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\pencils.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\retina.svg" />
+    <Content Include="Content\developer\flatUi\images\icons\svg\toilet-paper.svg" />
+    <Content Include="Content\developer\flatUi\images\login\icon.png" />
+    <Content Include="Content\developer\flatUi\images\login\imac-2x.png" />
+    <Content Include="Content\developer\flatUi\images\login\imac.png" />
+    <Content Include="Content\developer\flatUi\images\switch\mask-square.png" />
+    <Content Include="Content\developer\flatUi\images\switch\mask.png" />
+    <Content Include="Content\developer\flatUi\images\tile\ribbon-2x.png" />
+    <Content Include="Content\developer\flatUi\images\tile\ribbon.png" />
+    <Content Include="Content\developer\flatUi\images\todo\done-2x.png" />
+    <Content Include="Content\developer\flatUi\images\todo\done.png" />
+    <Content Include="Content\developer\flatUi\images\todo\search-2x.png" />
+    <Content Include="Content\developer\flatUi\images\todo\search.png" />
+    <Content Include="Content\developer\flatUi\images\todo\todo-2x.png" />
+    <Content Include="Content\developer\flatUi\images\todo\todo.png" />
+    <Content Include="Content\developer\flatUi\images\video\fullscreen-2x.png" />
+    <Content Include="Content\developer\flatUi\images\video\fullscreen.png" />
+    <Content Include="Content\developer\flatUi\images\video\pause-2x.png" />
+    <Content Include="Content\developer\flatUi\images\video\pause.png" />
+    <Content Include="Content\developer\flatUi\images\video\play-2x.png" />
+    <Content Include="Content\developer\flatUi\images\video\play.png" />
+    <Content Include="Content\developer\flatUi\images\video\poster.jpg" />
+    <Content Include="Content\developer\flatUi\images\video\volume-full-2x.png" />
+    <Content Include="Content\developer\flatUi\images\video\volume-full.png" />
+    <Content Include="Content\developer\flatUi\images\video\volume-off-2x.png" />
+    <Content Include="Content\developer\flatUi\images\video\volume-off.png" />
+    <Content Include="Content\developer\flatUi\js\application.js" />
+    <Content Include="Content\developer\flatUi\js\bootstrap-select.js" />
+    <Content Include="Content\developer\flatUi\js\bootstrap-switch.js" />
+    <Content Include="Content\developer\flatUi\js\bootstrap.min.js" />
+    <Content Include="Content\developer\flatUi\js\flatui-checkbox.js" />
+    <Content Include="Content\developer\flatUi\js\flatui-radio.js" />
+    <Content Include="Content\developer\flatUi\js\html5shiv.js" />
+    <Content Include="Content\developer\flatUi\js\icon-font-ie7.js" />
+    <Content Include="Content\developer\flatUi\js\jquery-1.10.2.min.js" />
+    <Content Include="Content\developer\flatUi\js\jquery-1.8.3.min.js" />
+    <Content Include="Content\developer\flatUi\js\jquery-2.0.3.min.js" />
+    <Content Include="Content\developer\flatUi\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Content\developer\flatUi\js\jquery.placeholder.js" />
+    <Content Include="Content\developer\flatUi\js\jquery.tagsinput.js" />
+    <Content Include="Content\developer\flatUi\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Content\developer\flatUi\js\respond.min.js" />
+    <Content Include="Content\developer\flatUi\js\typeahead.js" />
+    <Content Include="Content\developer\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="Content\developer\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="Content\developer\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\developer\FooTable-2\css\fonts\footable.svg" />
+    <Content Include="Content\developer\FooTable-2\css\footable.core.css" />
+    <Content Include="Content\developer\FooTable-2\css\footable.core.min.css" />
+    <Content Include="Content\developer\FooTable-2\css\footable.metro.css" />
+    <Content Include="Content\developer\FooTable-2\css\footable.metro.min.css" />
+    <Content Include="Content\developer\FooTable-2\css\footable.standalone.css" />
+    <Content Include="Content\developer\FooTable-2\css\footable.standalone.min.css" />
+    <Content Include="Content\developer\FooTable-2\demos\accordion.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\add-delete-row.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\ajax-redraw.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\ajax.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\api.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\arbitrary_toggle_markup.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\auto-expand-first-row-on-breakpoint.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\bookmarkable.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\bug-fixes\bug-data-ignore.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\bug-fixes\bug-remove-unneeded-detail-row-click.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\bug-fixes\bug-unused-breakpoints.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\css\arbitrary_toggle_markup.css" />
+    <Content Include="Content\developer\FooTable-2\demos\css\bootstrap-glyphicons.css" />
+    <Content Include="Content\developer\FooTable-2\demos\css\bootstrap-responsive.css" />
+    <Content Include="Content\developer\FooTable-2\demos\css\bootstrap.css" />
+    <Content Include="Content\developer\FooTable-2\demos\css\bootstrapSwitch.css" />
+    <Content Include="Content\developer\FooTable-2\demos\css\footable-demos.css" />
+    <Content Include="Content\developer\FooTable-2\demos\data-attributes.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\demo-template.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\editable-columns.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\event-interception.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\events.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\expand-collapse-all.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\filtering.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\fonts\glyphiconshalflings-regular.svg" />
+    <Content Include="Content\developer\FooTable-2\demos\getting-started.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\grid.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\group-headers.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\hidden-columns.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\icon-styles.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\img\footable.png" />
+    <Content Include="Content\developer\FooTable-2\demos\img\minus.png" />
+    <Content Include="Content\developer\FooTable-2\demos\img\plus.png" />
+    <Content Include="Content\developer\FooTable-2\demos\index.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\js\bootstrap-tab.js" />
+    <Content Include="Content\developer\FooTable-2\demos\js\bootstrapSwitch.js" />
+    <Content Include="Content\developer\FooTable-2\demos\js\data-generator.js" />
+    <Content Include="Content\developer\FooTable-2\demos\js\demos.js" />
+    <Content Include="Content\developer\FooTable-2\demos\js\jquery-1.9.1.min.js" />
+    <Content Include="Content\developer\FooTable-2\demos\js\jquery.mockjax.js" />
+    <Content Include="Content\developer\FooTable-2\demos\js\mustache.js" />
+    <Content Include="Content\developer\FooTable-2\demos\metro-theme.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\multiple-showcases.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\old-theme.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\paging.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\reset.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\row-toggle.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\showcase.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\sorting.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\striping.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\todo\column-groupings.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\todo\demo-ajax-with-mustache.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\todo\demo-bootstrapSwitch.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\todo\demo-colspan.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\todo\demo-widthHeightOverride.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\todo\demo-zebra.htm" />
+    <Content Include="Content\developer\FooTable-2\demos\triggers.htm" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.all.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.bookmarkable.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.filter.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.grid.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.paginate.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.sort.min.js" />
+    <Content Include="Content\developer\FooTable-2\dist\footable.striping.min.js" />
+    <Content Include="Content\developer\FooTable-2\Gruntfile.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.bookmarkable.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.filter.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.grid.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.memory.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.paginate.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.plugin.template.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.sort.js" />
+    <Content Include="Content\developer\FooTable-2\js\footable.striping.js" />
+    <Content Include="Content\developer\FooTable-2\screenshot.jpg" />
+    <Content Include="Content\developer\fullcalendar\changelog.txt" />
+    <Content Include="Content\developer\fullcalendar\fullcalendar.css" />
+    <Content Include="Content\developer\fullcalendar\fullcalendar.js" />
+    <Content Include="Content\developer\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Content\developer\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Content\developer\fullcalendar\fullcalendar.print.css" />
+    <Content Include="Content\developer\fullcalendar\gcal.js" />
+    <Content Include="Content\developer\fullcalendar\lang-all.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ar-ma.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ar-sa.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ar.js" />
+    <Content Include="Content\developer\fullcalendar\lang\bg.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ca.js" />
+    <Content Include="Content\developer\fullcalendar\lang\cs.js" />
+    <Content Include="Content\developer\fullcalendar\lang\da.js" />
+    <Content Include="Content\developer\fullcalendar\lang\de-at.js" />
+    <Content Include="Content\developer\fullcalendar\lang\de.js" />
+    <Content Include="Content\developer\fullcalendar\lang\el.js" />
+    <Content Include="Content\developer\fullcalendar\lang\en-au.js" />
+    <Content Include="Content\developer\fullcalendar\lang\en-ca.js" />
+    <Content Include="Content\developer\fullcalendar\lang\en-gb.js" />
+    <Content Include="Content\developer\fullcalendar\lang\es.js" />
+    <Content Include="Content\developer\fullcalendar\lang\fa.js" />
+    <Content Include="Content\developer\fullcalendar\lang\fi.js" />
+    <Content Include="Content\developer\fullcalendar\lang\fr-ca.js" />
+    <Content Include="Content\developer\fullcalendar\lang\fr.js" />
+    <Content Include="Content\developer\fullcalendar\lang\hi.js" />
+    <Content Include="Content\developer\fullcalendar\lang\hr.js" />
+    <Content Include="Content\developer\fullcalendar\lang\hu.js" />
+    <Content Include="Content\developer\fullcalendar\lang\id.js" />
+    <Content Include="Content\developer\fullcalendar\lang\is.js" />
+    <Content Include="Content\developer\fullcalendar\lang\it.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ja.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ko.js" />
+    <Content Include="Content\developer\fullcalendar\lang\lt.js" />
+    <Content Include="Content\developer\fullcalendar\lang\lv.js" />
+    <Content Include="Content\developer\fullcalendar\lang\nl.js" />
+    <Content Include="Content\developer\fullcalendar\lang\pl.js" />
+    <Content Include="Content\developer\fullcalendar\lang\pt-br.js" />
+    <Content Include="Content\developer\fullcalendar\lang\pt.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ro.js" />
+    <Content Include="Content\developer\fullcalendar\lang\ru.js" />
+    <Content Include="Content\developer\fullcalendar\lang\sk.js" />
+    <Content Include="Content\developer\fullcalendar\lang\sl.js" />
+    <Content Include="Content\developer\fullcalendar\lang\sr-cyrl.js" />
+    <Content Include="Content\developer\fullcalendar\lang\sr.js" />
+    <Content Include="Content\developer\fullcalendar\lang\sv.js" />
+    <Content Include="Content\developer\fullcalendar\lang\th.js" />
+    <Content Include="Content\developer\fullcalendar\lang\tr.js" />
+    <Content Include="Content\developer\fullcalendar\lang\uk.js" />
+    <Content Include="Content\developer\fullcalendar\lang\vi.js" />
+    <Content Include="Content\developer\fullcalendar\lang\zh-cn.js" />
+    <Content Include="Content\developer\fullcalendar\lang\zh-tw.js" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\animated-overlay.gif" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\developer\fullcalendar\lib\cupertino\jquery-ui.min.css" />
+    <Content Include="Content\developer\fullcalendar\lib\jquery-ui.custom.min.js" />
+    <Content Include="Content\developer\fullcalendar\lib\jquery.min.js" />
+    <Content Include="Content\developer\fullcalendar\lib\moment.min.js" />
+    <Content Include="Content\developer\fullcalendar\license.txt" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\banner.jpg" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\custom.css" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\icheck.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\arrow-bottom.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\arrow-top.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\header-line.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\icon-fork.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\icon-github.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\icon-lab.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\icon-options.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\ie\icon-star.png" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-bold.svg" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-regular.svg" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\normalize.css" />
+    <Content Include="Content\developer\iCheck-1.x\demo\index.html" />
+    <Content Include="Content\developer\iCheck-1.x\demo\js\custom.js" />
+    <Content Include="Content\developer\iCheck-1.x\demo\js\custom.min.js" />
+    <Content Include="Content\developer\iCheck-1.x\demo\js\jquery.js" />
+    <Content Include="Content\developer\iCheck-1.x\demo\js\zepto.js" />
+    <Content Include="Content\developer\iCheck-1.x\icheck.js" />
+    <Content Include="Content\developer\iCheck-1.x\icheck.min.js" />
+    <Content Include="Content\developer\iCheck-1.x\skins\all.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\aero%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\aero.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\aero.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\blue%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\blue.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\blue.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\flat%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\flat.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\flat.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\green%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\green.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\green.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\grey%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\grey.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\grey.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\orange%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\orange.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\orange.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\pink%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\pink.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\pink.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\purple%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\purple.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\purple.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\red%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\red.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\red.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\yellow%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\yellow.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\yellow.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\flat\_all.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\futurico\futurico%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\futurico\futurico.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\futurico\futurico.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\aero.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\blue.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\green.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\grey.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\line%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\line.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\line.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\orange.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\pink.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\purple.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\red.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\yellow.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\line\_all.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\aero%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\aero.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\aero.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\blue%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\blue.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\blue.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\green%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\green.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\green.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\grey%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\grey.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\grey.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\minimal%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\minimal.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\minimal.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\orange%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\orange.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\orange.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\pink%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\pink.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\pink.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\purple%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\purple.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\purple.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\red%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\red.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\red.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\yellow%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\yellow.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\yellow.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\minimal\_all.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\polaris\polaris%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\polaris\polaris.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\polaris\polaris.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\aero%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\aero.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\aero.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\blue%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\blue.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\blue.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\green%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\green.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\green.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\grey%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\grey.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\grey.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\orange%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\orange.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\orange.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\pink%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\pink.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\pink.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\purple%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\purple.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\purple.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\red%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\red.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\red.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\square%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\square.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\square.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\yellow%402x.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\yellow.css" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\yellow.png" />
+    <Content Include="Content\developer\iCheck-1.x\skins\square\_all.css" />
+    <Content Include="Content\developer\icheck\icheck.min.js" />
+    <Content Include="Content\developer\icheck\square\aero%402x.png" />
+    <Content Include="Content\developer\icheck\square\aero.css" />
+    <Content Include="Content\developer\icheck\square\aero.png" />
+    <Content Include="Content\developer\icheck\square\blue%402x.png" />
+    <Content Include="Content\developer\icheck\square\blue.css" />
+    <Content Include="Content\developer\icheck\square\blue.png" />
+    <Content Include="Content\developer\icheck\square\green%402x.png" />
+    <Content Include="Content\developer\icheck\square\green.css" />
+    <Content Include="Content\developer\icheck\square\green.png" />
+    <Content Include="Content\developer\icheck\square\grey%402x.png" />
+    <Content Include="Content\developer\icheck\square\grey.css" />
+    <Content Include="Content\developer\icheck\square\grey.png" />
+    <Content Include="Content\developer\icheck\square\orange%402x.png" />
+    <Content Include="Content\developer\icheck\square\orange.css" />
+    <Content Include="Content\developer\icheck\square\orange.png" />
+    <Content Include="Content\developer\icheck\square\pink%402x.png" />
+    <Content Include="Content\developer\icheck\square\pink.css" />
+    <Content Include="Content\developer\icheck\square\pink.png" />
+    <Content Include="Content\developer\icheck\square\purple%402x.png" />
+    <Content Include="Content\developer\icheck\square\purple.css" />
+    <Content Include="Content\developer\icheck\square\purple.png" />
+    <Content Include="Content\developer\icheck\square\red%402x.png" />
+    <Content Include="Content\developer\icheck\square\red.css" />
+    <Content Include="Content\developer\icheck\square\red.png" />
+    <Content Include="Content\developer\icheck\square\square%402x.png" />
+    <Content Include="Content\developer\icheck\square\square.css" />
+    <Content Include="Content\developer\icheck\square\square.png" />
+    <Content Include="Content\developer\icheck\square\yellow%402x.png" />
+    <Content Include="Content\developer\icheck\square\yellow.css" />
+    <Content Include="Content\developer\icheck\square\yellow.png" />
+    <Content Include="Content\developer\icheck\square\_all.css" />
+    <Content Include="Content\developer\iealert\css\bg.png" />
+    <Content Include="Content\developer\iealert\css\iealertsprite.png" />
+    <Content Include="Content\developer\iealert\css\style.css" />
+    <Content Include="Content\developer\iealert\demo.html" />
+    <Content Include="Content\developer\iealert\js\iealert.js" />
+    <Content Include="Content\developer\jeasyui\jquery.easyui.min.js" />
+    <Content Include="Content\developer\jeasyui\themes\black\accordion.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\calendar.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\combo.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\combobox.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\datagrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\datebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\dialog.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\easyui.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\accordion_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\blank.gif" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\calendar_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\combo_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\datagrid_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\datebox_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\layout_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\linkbutton_bg.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\loading.gif" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\menu_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\messager_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\pagination_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\panel_tools.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\searchbox_button.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\slider_handle.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\spinner_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\tabs_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\tree_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\validatebox_warning.png" />
+    <Content Include="Content\developer\jeasyui\themes\black\layout.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\linkbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\menu.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\menubutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\messager.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\pagination.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\panel.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\progressbar.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\propertygrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\searchbox.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\slider.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\spinner.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\splitbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\tabs.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\tooltip.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\tree.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\validatebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\black\window.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\accordion.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\calendar.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\combo.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\combobox.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\datagrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\datebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\dialog.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\easyui.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\blank.gif" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\loading.gif" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\layout.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\linkbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\menu.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\menubutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\messager.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\pagination.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\panel.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\progressbar.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\propertygrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\searchbox.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\slider.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\spinner.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\splitbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\tabs.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\tooltip.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\tree.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\validatebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\window.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\accordion.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\calendar.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\combo.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\combobox.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\datagrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\datebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\dialog.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\easyui.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\blank.gif" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\combo_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\layout_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\loading.gif" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\menu_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\messager_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\pagination_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\panel_tools.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\searchbox_button.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\slider_handle.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\tabs_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\tree_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="Content\developer\jeasyui\themes\default\layout.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\linkbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\menu.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\menubutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\messager.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\pagination.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\panel.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\progressbar.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\propertygrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\searchbox.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\slider.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\spinner.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\splitbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\tabs.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\tooltip.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\tree.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\validatebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\default\window.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\accordion.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\calendar.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\combo.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\combobox.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\datagrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\datebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\dialog.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\easyui.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\accordion_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\blank.gif" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\calendar_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\combo_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\datagrid_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\datebox_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\layout_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\loading.gif" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\menu_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\messager_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\pagination_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\panel_tools.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\searchbox_button.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\slider_handle.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\spinner_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\tabs_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\tree_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\validatebox_warning.png" />
+    <Content Include="Content\developer\jeasyui\themes\gray\layout.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\linkbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\menu.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\menubutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\messager.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\pagination.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\panel.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\progressbar.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\propertygrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\searchbox.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\slider.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\spinner.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\splitbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\tabs.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\tooltip.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\tree.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\validatebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\gray\window.css" />
+    <Content Include="Content\developer\jeasyui\themes\icon.css" />
+    <Content Include="Content\developer\jeasyui\themes\icons\back.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\blank.gif" />
+    <Content Include="Content\developer\jeasyui\themes\icons\cancel.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\cut.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\edit_add.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\edit_remove.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\filesave.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\filter.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\help.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\mini_add.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\mini_edit.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\mini_refresh.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\no.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\ok.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\pencil.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\print.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\redo.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\reload.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\search.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\sum.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\tip.png" />
+    <Content Include="Content\developer\jeasyui\themes\icons\undo.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\accordion.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\calendar.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\combo.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\combobox.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\datagrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\datebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\dialog.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\easyui-gray.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\easyui-green.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\easyui.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\accordion_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\blank.gif" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\calendar_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\combo_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\datagrid_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\datebox_arrow.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\layout_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\loading.gif" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\menu_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\messager_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\pagination_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\panel_tools.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\searchbox_button.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\slider_handle.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\spinner_arrows.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\tabs_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\tree_icons.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\validatebox_warning.png" />
+    <Content Include="Content\developer\jeasyui\themes\metro\layout.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\linkbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\menu.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\menubutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\messager.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\pagination.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\panel.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\progressbar.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\propertygrid.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\searchbox.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\slider.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\spinner.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\splitbutton.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\tabs.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\tooltip.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\tree.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\validatebox.css" />
+    <Content Include="Content\developer\jeasyui\themes\metro\window.css" />
+    <Content Include="Content\developer\jqueryStart\img\star_v2.png" />
+    <Content Include="Content\developer\js\jquery-1.8.3.min.js" />
+    <Content Include="Content\developer\My97DatePicker\calendar.js" />
+    <Content Include="Content\developer\My97DatePicker\lang\en.js" />
+    <Content Include="Content\developer\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Content\developer\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Content\developer\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Content\developer\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Content\developer\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Content\developer\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Content\developer\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Content\developer\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Content\developer\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Content\developer\My97DatePicker\WdatePicker.js" />
+    <Content Include="Content\developer\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="Content\developer\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="Content\developer\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="Content\developer\My97DatePicker\开发包\readme.txt" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Content\developer\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Content\Image\10525578.gif" />
+    <Content Include="Content\Image\av1.png" />
+    <Content Include="Content\Image\av6.png" />
+    <Content Include="Content\Image\shortArticle.png" />
+    <Content Include="Content\js\addDel.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\layer-v1.9.3\demo.html" />
+    <Content Include="Content\layer-v1.9.3\layer\extend\layer.ext.js" />
+    <Content Include="Content\layer-v1.9.3\layer\layer.js" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\default\icon-ext.png" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\default\icon.png" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\default\loading-0.gif" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\default\loading-1.gif" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\default\loading-2.gif" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\layer.css" />
+    <Content Include="Content\layer-v1.9.3\layer\skin\layer.ext.css" />
+    <Content Include="Content\layer-v1.9.3\更新日志.txt" />
+    <Content Include="DeleteShortArticle.aspx" />
+    <Content Include="Exit.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MyShortArticle.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="ShortArticle.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxFavorite.ashx.cs">
+      <DependentUpon>AjaxFavorite.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxLike.ashx.cs">
+      <DependentUpon>AjaxLike.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CommconHelper.cs" />
+    <Compile Include="DAL\CustomerService.cs" />
+    <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="DAL\ShortArticleService.cs" />
+    <Compile Include="DeleteShortArticle.aspx.cs">
+      <DependentUpon>DeleteShortArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteShortArticle.aspx.designer.cs">
+      <DependentUpon>DeleteShortArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exit.aspx.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exit.aspx.designer.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ArticleCommentModel.cs" />
+    <Compile Include="Model\ArticleLikeModel.cs" />
+    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\FavoriteModel.cs" />
+    <Compile Include="Model\ShortArticleModel.cs" />
+    <Compile Include="MyShortArticle.aspx.cs">
+      <DependentUpon>MyShortArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyShortArticle.aspx.designer.cs">
+      <DependentUpon>MyShortArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShortArticle.aspx.cs">
+      <DependentUpon>ShortArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShortArticle.aspx.designer.cs">
+      <DependentUpon>ShortArticle.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\developer\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Content\developer\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\developer\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\developer\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\developer\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\developer\flatUi\fonts\flat-ui-icons-regular.eot" />
+    <Content Include="Content\developer\flatUi\fonts\flat-ui-icons-regular.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\flat-ui-icons-regular.woff" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-black.eot" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-black.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-black.woff" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bold.eot" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bold.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bold.woff" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bolditalic.eot" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bolditalic.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-bolditalic.woff" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-italic.eot" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-italic.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-italic.woff" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-light.eot" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-light.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-light.woff" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-regular.eot" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-regular.ttf" />
+    <Content Include="Content\developer\flatUi\fonts\lato\lato-regular.woff" />
+    <Content Include="Content\developer\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\developer\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\developer\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\developer\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="Content\developer\FooTable-2\.csslintrc" />
+    <Content Include="Content\developer\FooTable-2\.gitattributes" />
+    <Content Include="Content\developer\FooTable-2\.gitignore" />
+    <Content Include="Content\developer\FooTable-2\.jshintrc" />
+    <Content Include="Content\developer\FooTable-2\.travis.yml" />
+    <Content Include="Content\developer\FooTable-2\bower.json" />
+    <Content Include="Content\developer\FooTable-2\component.json" />
+    <Content Include="Content\developer\FooTable-2\composer.json" />
+    <Content Include="Content\developer\FooTable-2\css\fonts\footable.eot" />
+    <Content Include="Content\developer\FooTable-2\css\fonts\footable.ttf" />
+    <Content Include="Content\developer\FooTable-2\css\fonts\footable.woff" />
+    <Content Include="Content\developer\FooTable-2\demos\fonts\glyphiconshalflings-regular.eot" />
+    <Content Include="Content\developer\FooTable-2\demos\fonts\glyphiconshalflings-regular.otf" />
+    <Content Include="Content\developer\FooTable-2\demos\fonts\glyphiconshalflings-regular.ttf" />
+    <Content Include="Content\developer\FooTable-2\demos\fonts\glyphiconshalflings-regular.woff" />
+    <Content Include="Content\developer\FooTable-2\footable.jquery.json" />
+    <Content Include="Content\developer\FooTable-2\icomoon\footable.json" />
+    <Content Include="Content\developer\FooTable-2\js\.jshintrc" />
+    <Content Include="Content\developer\FooTable-2\less\footable.core.less" />
+    <Content Include="Content\developer\FooTable-2\less\footable.metro.less" />
+    <Content Include="Content\developer\FooTable-2\less\footable.standalone.less" />
+    <Content Include="Content\developer\FooTable-2\LICENSE" />
+    <Content Include="Content\developer\FooTable-2\package.json" />
+    <Content Include="Content\developer\FooTable-2\README.md" />
+    <Content Include="Content\developer\FooTable-2\screenshot.pdn" />
+    <Content Include="Content\css\c.less" />
+    <Content Include="Content\css\i-ColorWidth.less" />
+    <Content Include="Content\css\l.less" />
+    <Content Include="Content\css\login.less" />
+    <Content Include="Content\css\mixins\l-color.less" />
+    <Content Include="Content\css\mixins\m-background-variant.less" />
+    <Content Include="Content\css\mixins\m-border-radius.less" />
+    <Content Include="Content\css\mixins\m-center-block.less" />
+    <Content Include="Content\css\mixins\m-clearfix.less" />
+    <Content Include="Content\css\mixins\m-gradients.less" />
+    <Content Include="Content\css\mixins\m-grid.less" />
+    <Content Include="Content\css\mixins\m-hide-text.less" />
+    <Content Include="Content\css\mixins\m-image.less" />
+    <Content Include="Content\css\mixins\m-labels.less" />
+    <Content Include="Content\css\mixins\m-reset.less" />
+    <Content Include="Content\css\mixins\m-shadow.less" />
+    <Content Include="Content\css\mixins\m-u.less" />
+    <Content Include="Content\css\mixins\u-padding.less" />
+    <Content Include="Content\css\mixins\veryless-plugin.less" />
+    <Content Include="Content\css\mixins\veryless.less" />
+    <Content Include="Content\css\p.less" />
+    <Content Include="Content\css\print.less" />
+    <Content Include="Content\css\reset.less" />
+    <Content Include="Content\css\u.less" />
+    <Content Include="Content\developer\iCheck-1.x\.gitignore" />
+    <Content Include="Content\developer\iCheck-1.x\bower.json" />
+    <Content Include="Content\developer\iCheck-1.x\CHANGELOG.md" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\custom.styl" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-bold.eot" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-bold.ttf" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-bold.woff" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-regular.eot" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-regular.ttf" />
+    <Content Include="Content\developer\iCheck-1.x\demo\css\montserrat-regular.woff" />
+    <Content Include="Content\developer\iCheck-1.x\icheck.jquery.json" />
+    <Content Include="Content\developer\iCheck-1.x\README.md" />
+    <Content Include="Content\developer\jeasyui\themes\black\images\Thumbs.db" />
+    <Content Include="Content\developer\jeasyui\themes\bootstrap\images\Thumbs.db" />
+    <Content Include="Content\developer\jeasyui\themes\default\images\Thumbs.db" />
+    <Content Include="Content\developer\jeasyui\themes\gray\images\Thumbs.db" />
+    <Content Include="Content\developer\jeasyui\themes\metro\images\Thumbs.db" />
+    <Content Include="Content\layer-v1.9.3\doc\jquery下载.url" />
+    <Content Include="Content\layer-v1.9.3\doc\layer交流.url" />
+    <Content Include="Content\layer-v1.9.3\doc\layer官网.url" />
+    <Content Include="Content\layer-v1.9.3\layer众筹送书.url" />
+    <Content Include="AjaxLike.ashx" />
+    <Content Include="AjaxFavorite.ashx" />
+    <None Include="Properties\PublishProfiles\ShortArticle.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2132</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:23067/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

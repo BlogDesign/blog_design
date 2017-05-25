@@ -1,0 +1,40 @@
+﻿/*png fix*/
+
+
+
+/*使用group时，针对ie*/
+/* IE6 */
+*html .group {
+height: 1%;
+}
+/*光标悬浮时变成手*/
+*html a:hover, 
+*html li:hover {
+cursor: pointer;
+}
+/* IE7 */
+*:first-child+html .group {
+min-height: 1px;
+}
+/* IE< 8 */
+.group {
+zoom:1;
+}
+
+table thead tr th {
+background: #fff0d2;
+border-bottom: 3px solid #0da542;
+text-indent: 5px;
+border-right: 1px solid #DBCBAD;
+}
+table tbody tr td {
+border-bottom: 1px solid #ABD388;
+border-right: 1px solid #E5E5CB;
+}
+
+table#tb-content  tbody tr.hover-color td {
+background: #CCDDAB;
+}
+table#tb-content  tbody tr.check-color td {
+background: #AFCE71;
+}

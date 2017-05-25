@@ -1,0 +1,26 @@
+﻿.OKDiv
+{
+      background-color: yellowGreen;
+      height: 50px;
+      width: 100px;
+      border-radius: 6px 6px 6px 6px;
+      margin-left:200px;
+      margin-bottom:20px; 
+      color: White;
+      padding-bottom: 6px;
+}
+
+.OKDivClose
+{
+    padding-left: 85px; 
+    cursor:pointer;          
+}
+
+.OKDivContent
+{
+    padding-left: 16px;
+    font-weight: bold;
+}
+
+
+

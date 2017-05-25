@@ -1,0 +1,104 @@
+@import "mixins/m-u.less";
+@import "mixins/m-clearfix.less";
+@import "mixins/m-shadow.less";
+@import "mixins/m-border-radius.less";
+@import "mixins/m-gradients.less";
+
+.p-timeSelect{
+	.u-b--s;
+}
+.p-timeSelect_header{
+	.u-wh(52px);
+	.u-f--l;
+	.u-pt(33px);
+	thead{
+		.u-bt(2px);
+		.u-bb();
+	}
+	thead>tr>th{
+		.u-bb(1px);
+	}
+}
+.p-timeSelect_content{
+	.u-ml(52px);
+	.c-table-responsive{
+		.u-m;
+	}
+	.table{
+		.u-d--ib;
+		.u-wh--a;
+	}
+	& tbody td{
+		.u-p !important;
+		.u-ht(34px);
+		// a{
+		// 	.u-ht(33px);
+		// 	min-width: 20px;
+		// 	.u-d--b;
+		// 	text-indent: -9999px;
+		// }
+	}
+	td.c-success a{
+		color:#95AF89;
+	}
+}
+.p-td_wrap{
+	.u-wh(320px);
+	.u-ht(33px);
+}
+.p-timeSelect_content .p-timeSelect_checked{
+	box-sizing: border-box;
+	.u-f--l;
+	.u-d--b;
+	line-height: 33px;
+	.u-ta--c;
+	.u-ht(33px);
+	.u-wh(20px);
+	.u-bl--s;
+	text-decoration: none;
+	color:#729962;
+	&.active{
+		.u-bg-c(#DFF0D8) !important;
+	}
+	&:hover{
+		.u-bg-c(#DDDDDD);
+	}
+	&:first-child{
+		.u-b--n;
+	}
+	text-indent: -9999px;
+}
+.p-text-physique{
+	.u-fs(14px);
+	strong{
+		.u-fs(16px);
+		.u-ml(10px);
+		.u-mr(10px);
+		color: #F98E33;
+	}
+	small{
+		color:#CCCCCC;
+	}
+}
+.p-question{
+	.u-fs(14px);
+	b{
+		.u-fs(16px);
+		.u-mr(.5em);
+		.u-va--m;
+	}
+}
+.p-radio-group{
+	.u-pl(1.8em);
+}
+.p-list-group-index>.list-group-item{
+	.u-pl(30px);
+	.u-pos--r;
+	.p-i-people{
+		.u-d--b;
+		.u-pos--a;
+		left:7px;
+		.u-wh(18px);
+		.u-ht(18px);
+	}
+}

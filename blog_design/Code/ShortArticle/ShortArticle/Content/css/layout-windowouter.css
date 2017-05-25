@@ -1,0 +1,227 @@
+﻿/*----------一级页面------------*/
+#maincontent {
+width: 100%;
+min-height: 100%;
+height: auto !important;
+height: 100%;
+}
+/*table开始*/
+table,
+table tr {
+width: 100%;
+}
+table tfoot tr td {
+padding: 5px;
+}
+
+table thead tr th,
+table tbody tr td {
+text-align: left;
+padding-left: 5px;
+line-height: 30px;
+height: 30px;
+vertical-align: middle;
+table-layout:fixed;
+word-break: break-all;/* 不换行 */
+white-space:nowrap;/* 不换行 */
+overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+/*填写问卷-----继续评估*/
+.fill-data {
+padding: 0 5px;
+width: 200px;
+}
+
+ul.older-data {
+height: 50px;
+width: 200px;
+overflow: auto;
+}
+ul.older-data li {
+display: inline-block;
+}
+ul.older-data li a {
+display: block;
+line-height: 30px;
+height: 30px;
+padding: 0 5px;
+}
+ul.older-data li a:hover {
+background: #EDEBD0;
+}
+
+/*套餐指定*/
+#content {
+padding: 10px 0;
+width: 460px;
+margin: 0 auto;
+}
+#package-content {
+border: #ABD388 solid 1px;
+text-indent: 1em;
+margin: 10px 0;
+}
+#package-content div {
+height: 100px;
+overflow-y: scroll;
+}
+#package-content h3 {
+background: #FFF0D2;
+line-height: 30px;
+}
+#package-content p {
+border-top: #ABD388 solid 1px;
+}
+#tb-tool {
+width: 160px;
+margin: 10px auto;
+}
+#tb-tool input {
+margin: 0 0 0 10px;	
+}
+/*随访设置*/
+#fllow-content {
+padding: 10px 0;
+width: 460px;
+margin: 0 auto;
+}
+#fllow-content p {
+margin-top: 10px; 
+}
+#fllow-content label {
+padding: 0 10px;
+}
+#fllow-content textarea {
+width: 270px;
+height: 100px;
+}
+/*新建单位*/
+.right-button {
+float: right;
+margin: 5px;
+}
+#new-company table thead tr {
+background: #fff0d2;
+border-bottom: 3px solid #0da542;
+}
+#new-company table thead tr th {
+text-indent: 5px;
+border-right: none;
+}
+#new-company table tbody tr  {
+border-bottom: 1px solid #ABD388;
+}
+#new-company table tbody tr td {
+border-right: none;
+}
+/*单位指定*/
+.company td {
+padding: 0;
+position: relative;
+}
+.company label {
+text-indent: 1.5em;
+display: block;
+width: 100%;
+}
+.company  input[type=radio]:checked~label {
+font-size: 1.4em;
+border-color: #FFF0D2;
+background: #f5deb4;
+
+-webkit-box-shadow: 0 0 1px rgba(0,0,0,.4);
+box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+.company input {
+position: absolute;
+top: 5px;
+z-index: 2;
+cursor: pointer;
+
+opacity: 0;
+
+display: block\9;
+margin: 0;
+
+line-height: 30px;
+}
+/*个人用户健康信息 - 干预随访任务*/
+tfoot td p {
+display: block;
+float: left;
+height: 30px;
+line-height: 30px;
+margin-right: 10px;
+line-height: 30px;
+vertical-align:middle;
+}
+/*tfoot中分页导航，按钮*/
+.pageinner {
+float: left;
+width: 65%;
+}
+.pagenav li {
+display: inline-block;
+}
+* html .pagenav li   {
+ display: inline; 
+ }  
+*+html .pagenav  li   {
+ display: inline; 
+ }
+.pagenav li a {
+padding: 0 10px;
+display: block;
+line-height: 30px;
+-webkit-transition: all 0.1s ease-in 0s;
+-moz-transition: all 0.1s ease-in 0s;
+-o-transition: all 0.1s ease-in 0s;
+transition: all 0.1s ease-in 0s;
+zoom:1;
+}
+ul.pagenav {
+text-align: center;
+}
+ul.pagenav,
+.scott {
+float: left;
+margin: 5px 0px 0px 5px;
+}
+.scott {
+line-height: 30px;
+}
+.scott p.number {
+display: block;
+float: left;
+margin-right: 5px;
+}
+.tb-tool {
+float: right;
+width: 35%;
+}
+.tb-tool div {
+float: right;
+margin-right: 5px;
+}
+.tb-tool div input.tb-tool-button {
+float: left;
+}
+/*权限管理*/
+#account {
+background: #FFF0D2;
+}
+#account p {
+float: left;
+padding: 10px 50px 10px 10px;
+}
+/*系统设置 - 文件接口设置*/
+table#search {
+width: 339px;
+float: left;
+border-right: 3px solid #C9B793;
+}
+table#interface {
+width: 480px;
+}
